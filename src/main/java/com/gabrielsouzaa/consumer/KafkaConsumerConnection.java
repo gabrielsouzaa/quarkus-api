@@ -13,7 +13,7 @@ public class KafkaConsumerConnection {
 
     @Incoming("topico01")
     @Outgoing("topico02")
-    public Fruit consumerTopic01AndProduceTopic02(Fruit fruit) {
+    public Fruit process(Fruit fruit) {
         return fruit;
     }
 
